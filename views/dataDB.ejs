@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+</head>
+<h1>Hi <%= name %>! Welcome to the MongoDB Database! </h1>
+<form action="/searchDB" method="POST">
+<input type="text" name="search" value="<% locals.search %>"/>
+    <button type="submit">Search MongoDB</button>
+</form>
+<form action="/dataPG" method="GET">
+    <button type="submit">PGAdmin</button>
+</form>
+<form action="/logout?_method=DELETE" method="POST">
+    <button type="submit">Log Out</button>
+</form>
+<body>
+<h1>MongoDB Data</h1>
+    <% info2.forEach((data) => { %>
+    <p>
+        <div><%=data.game_title %></div>
+        <body>
+        <b>Developer:</b> <%=data.developer %> |
+        <b>Main Character:</b> <%=data.main_character %> |
+        <b>Description:</b> <%=data.description %>
+        </body>
+    </p>
+    <%})%>
+    <h1>MongoDB Data</h1>
+    <% info2.forEach((data) => { %>
+        <p>
+            <h1><%=data.game_title %></h1> 
+            <%=data.developer %> <br>
+            <%=data.main_character %> <br>
+            <%=data.description %> <br>
+        </p>
+        <%})%>
+</body>

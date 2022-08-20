@@ -1,0 +1,15 @@
+<h1> Here are your MongoDB results for: <%=input %>  </h1>
+<form action="/dataDB" method="GET">
+    <button type="submit">Return</button>
+</form>
+<% info2.forEach((data) => { %>
+<% if (data.game_title.toUpperCase() === input.toUpperCase()) { %>
+<p>
+    <div><%=data.game_title %></div>
+    <body>
+        <b>Developer:</b> <%=data.developer %> |
+        <b>Main Character:</b> <%=data.main_character %> |
+        <b>Description:</b> <%=data.description %>
+    </body>
+    <%}})%>
+</p>

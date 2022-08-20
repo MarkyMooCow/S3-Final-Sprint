@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+</head>
+<h1>Hi <%= name %>, and welcome to our GameDatabase!</h1>
+<h1>Choose one of the databases or log out.</h1>
+<form action="/dataPG" method="GET">
+    <button type="submit">PGAdmin</button>
+</form>
+<form action="/dataDB" method="GET">
+    <button type="submit">MongoDB</button>
+</form>
+<form action="/logout?_method=DELETE" method="POST">
+    <button type="submit">Log Out</button>
+</form>

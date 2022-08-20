@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+</head>
+<h1>Hi <%= name %>! Welcome to the PGAdmin Database!</h1>
+<form action="/searchPG" method="POST">
+<input type="text" name="search" value="<% locals.search %>"/>
+    <button type="submit">Search PGAdmin (By Name)</button>
+</form>
+<form action="/dataDB" method="GET">
+    <button type="submit">MongoDB</button>
+</form>
+<form action="/logout?_method=DELETE" method="POST">
+    <button type="submit">Log Out</button>
+</form>
+<body>
+<h1>PGAdmin Data</h1>
+    <% info.forEach((data) => { %>
+    <p>
+        <div><%=data.game_title %></div>
+        <body>
+        <b>Developer:</b> <%=data.developer %> |
+        <b>Main Character:</b> <%=data.main_character %> |
+        <b>Description:</b> <%=data.description %>
+        </body>
+    </p>
+<%})%>
+
+</body>
