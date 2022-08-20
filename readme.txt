@@ -1,7 +1,7 @@
 Creators: Mark Hunter, Riley John, Heather Bartlett
 Project Name: S3-FinalSprint
 Description: This project takes a PGAdmin Database and a MongoDB database to make a combined video game database!
-(Disclaimer: There are and will be dupes)
+(Disclaimer: There are and will be dupes. Also the search queries are super strict, you'll have to search EXACTLY the name of the game. Capital and lowercase don't matter though, we managed to do that)
 
 Anyways, lets talk about setup.
 -----
