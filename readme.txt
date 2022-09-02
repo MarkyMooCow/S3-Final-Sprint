@@ -13,11 +13,12 @@ After that, we'll have to change the | db.js | around to fit a role on your PC.
 Create a role by right clicking on Login/Group roles and selecting Create > Login/Group Role.
 I suggest giving it pretty much all the permissions you can.
 
-After that, just configure the db.js to fit the parameters of what you entered for your role.
-As you may of noticed, my personal user is Morgan, but feel free to use whatever login credientials you want.
+After that, just configure the | db.js | to fit the parameters of what you entered for your role.
+As you may of noticed, my personal user is Morgan with my password being Jeralt, but feel free to use whatever login credientials you want.
 -----
 MongoDB
-As long as the MongoDB Server is up (This is ran by Riley John) and you are connected to the internet, you can leave this be as the only thing you'll really have to do is install something later for the app itself.
+As long as the MongoDB Server is up (This is ran by Riley John) and you are connected to the internet, you can leave this be. 
+The only thing you'll really have to do is install something later for the app itself in the step below.
 -----
 The App Itself
 Alright, final stretch. I'll need you to run three commands in your terminal.
