@@ -29,8 +29,7 @@ Final stretch, lets go!
 I'll need you to run two commands in your terminal.
 
 npm init
-npm i bcrypt ejs express express-flash express-session method-override mongodb passport passport-local pg
-npm install dotenv
+npm i bcrypt dotenv ejs express express-flash express-session method-override mongodb passport passport-local pg
 npm i --save-dev env
 
 One is slightly longer then the others.
